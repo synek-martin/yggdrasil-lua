@@ -761,6 +761,6 @@ until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
 
 if prohlednutiPrstenu1 == "1" then
 	print("")
-elseif prohlednutiPrstenu1 == "2"
+elseif prohlednutiPrstenu1 == "2" then
 	print("")
 end
