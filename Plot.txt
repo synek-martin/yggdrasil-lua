@@ -1,0 +1,51 @@
+Valka Bohu
+
+
+Postavy:
+Asvald Amundsen - Jmeno MC
+Fredrik Asphaug - dlouhodoby kamarad MC
+Siri Holm - kamaradka MC
+
+
+
+
+severska mytologie - thema VR hry
+virtualni realita - konzole, brana do jineho sveta
+prsten - jina verze konzole pro virtualni realitu
+Valka Bohu - hra ve virtualni realite, zalozena na severske mytologii
+konzole - The Omen, znameni, predpovida budoucnost
+The Ember's Will - nazev prstenu, ktery MC najde, funguje jako The Omen
+
+
+Svety:
+Niflheim - svet mlhy a zimy, odtud pochazi vsechny zive bytosti
+Muspelheim - svet ohne, domov demonu
+Asgard - domov bohu (Aesir a Asynjur)
+Midgard - domov lidi, stred Yggdrasilu
+Jotunheim - domov obru (Jotun)
+Vanaheim - domov Vanir bohu (stari bohove), mistri magie, umi predpovidat budoucnost, nikdo nevi kde je a jak vypada
+Alfheim - domov svetlich elfu, krasni, jsou to strazni andele, jsou to nizsi bohove prirody a urody
+Svartalfheim - domov trpasliku, mistri vyroby, darovali spoustu mocnych zbrani bohum z asgardu
+Helheim - domov bezcestnych mrtvych, zde jsou ti kteri nesli do Valhally nebo Folkvangru
+Yggdrasil - 'strom svetu', podporuje vsech devet svetu v severske mythologii
+
+Funkce: 	
+			pripraveni		ok
+			cekani 			ok
+			info 			ok
+			triRadkz 		ok
+			uvod 			ok
+			pokracovani 	ok
+			vytvareni postavy	~ inbound [PH] -- jina verze
+
+Pribeh: 
+
+MC je stredoskolak a se svymi kamarady chce hrat novou hru, ktera vychazi na konzoli, The Omen, od The Boring Company, zalozenou Elonem Muskem.
+Na rozdil od jeho kamaradu, rodice MC mu nechteji a ani nekoupi tuto konzoli.
+Jednou najde MC prsten zvany The Ember's will(tehdy nevi jmeno).
+Mysli si ze je to pouze prekrasny prsten a vezme si ho domu.
+Kdyz je doma a maho nasazeny stezuje si ze nemuze hrat s kamarady.
+V tu chvili se mu pred ocima zobrazi systemovy log.
+Napise se mu ze se pripojuje na Valku Bohu.
+Vytvori si postavu ktera se jmenuje Ref.
+Jeho postava 

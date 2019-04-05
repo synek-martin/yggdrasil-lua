@@ -133,7 +133,7 @@ function info() -- info / nefunkcni nyni
 	print()
 	print("Valka Bohu")
 	print("----------")
-	print("Alpha 0.68b")
+	print("Alpha 0.75a")
 	print("-----------")
 	print()
 end
@@ -736,4 +736,22 @@ cekani(1)
 
 vynechRadek()
 
-print("")
+print("Prisel jsi domu.")
+print("Najedl jsi se.")
+print("Sel jsi k sobe do pokoje a sedl jsi si na postel.")
+
+vynechRadek()
+		
+pokracovani()
+		
+cekani(1)
+
+vynechRadek()
+
+print("Chces si prohlednou ten prsten?")
+
+vynechRadek()
+
+cekani(1)
+
+io.write("ok")
