@@ -758,3 +758,9 @@ repeat -- prohlednes si prsten?
 		io.write("1) Ano. 2) Ne. : ")
 		prohlednutiPrstenu1 = io.read()
 until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
+
+if prohlednutiPrstenu1 == "1" then
+	print("")
+elseif prohlednutiPrstenu1 == "2"
+	print("")
+end
