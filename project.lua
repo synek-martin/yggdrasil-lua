@@ -754,4 +754,7 @@ vynechRadek()
 
 cekani(1)
 
-io.write("ok")
+repeat -- prohlednes si prsten?
+		io.write("1) Ano. 2) Ne. : ")
+		prohlednutiPrstenu1 = io.read()
+until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
