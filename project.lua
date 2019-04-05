@@ -795,4 +795,6 @@ elseif prohlednutiPrstenu1 == "2" then
 	vynechRadek()
 	
 	print("")
+elseif prohlednutiPrstenu1 == "2" then
+	print("")
 end
