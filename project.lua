@@ -794,5 +794,17 @@ elseif prohlednutiPrstenu1 == "2" then
 	
 	vynechRadek()
 	
-	print("")
+	print("Chvili jsi se ucil a pak jsi sel spat.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Uprostred noci se probudis a zjistis, ze na tom prstenu lehce svetelkuji nejake runy.")
+	print("Vezmes si ho do ruky a uvedomis si, ze se zacina trochu zahrivat.")
 end
+
