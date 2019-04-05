@@ -760,7 +760,39 @@ repeat -- prohlednes si prsten?
 until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
 
 if prohlednutiPrstenu1 == "1" then
-	print("")
-elseif prohlednutiPrstenu1 == "2"
+	print("Rozhodl jsi se prohlidnout si prsten.")
+	
+	vynechRadek()
+		
+	pokracovani()
+		
+	cekani(1)
+
+	vynechRadek()
+	
+	print("Kdyz se na nej koukas podrobneji, vidis na nem nejake runy.")
+	print("Prstem prejedes po tech runach.")
+	
+	vynechRadek()
+		
+	pokracovani()
+		
+	cekani(1)
+	
+	vynechRadek()
+		
+	print("Kdyz jsi po nich prejel prstem, tak zacali trochu zarit.")
+	print("Po chvili zjistis, ze se ten prsten zacal zahrivat.")
+elseif prohlednutiPrstenu1 == "2" then
+	print("Rozhodl jsi se neprohlidnout si prsten.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
 	print("")
 end
