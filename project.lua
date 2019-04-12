@@ -133,7 +133,7 @@ function info() -- info / nefunkcni nyni
 	print()
 	print("Valka Bohu")
 	print("----------")
-	print("Alpha 0.75a")
+	print("Alpha 0.86a")
 	print("-----------")
 	print()
 end
@@ -759,6 +759,8 @@ repeat -- prohlednes si prsten?
 		prohlednutiPrstenu1 = io.read()
 until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
 
+vynechRadek()
+
 if prohlednutiPrstenu1 == "1" then
 	print("Rozhodl jsi se prohlidnout si prsten.")
 	
@@ -808,3 +810,46 @@ elseif prohlednutiPrstenu1 == "2" then
 	print("Vezmes si ho do ruky a uvedomis si, ze se zacina trochu zahrivat.")
 end
 
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Cim dele drzis ten prsten, tim vice mas pocit, ze by jsi si ho mel nasadit.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Jakmile jsi si ho nasadil. Usnul jsi.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+triRadky()
+
+logVR()
+
+triRadky()
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("")
