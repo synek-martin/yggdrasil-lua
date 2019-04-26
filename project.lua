@@ -929,6 +929,33 @@ cekani(1)
 
 repeat -- Vesnice nebo okoli?
 		io.write("1) Dale do vesnice. 2) Prozkoumat okoli. : ")
-		prohlednutiPrstenu1 = io.read()
-until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
+		vesnice = io.read()
+until vesnice == "1" or vesnice == "2"
 
+if vesnice == "1" then
+print("Rozhodl jsi se jit dale do vesnice.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Prichazis ")
+
+elseif vesnice == "2" then
+print("Rozhodl jsi se prozkoumat okoli.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("")
+
+end
