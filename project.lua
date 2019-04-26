@@ -874,7 +874,18 @@ cekani(3)
 
 vynechRadek()
 
+print("Myslis si ze jenom snis a tak si vytvoris nahodnou postavu.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(3)
+
+vynechRadek()
+
 print("Vybral jste si:")
+print("Jmeno postavy: Ingi")
 print("Rasa: Clovek")
 print("Trida: Viking")
 print("Zacatecni zbran: Sekera")
