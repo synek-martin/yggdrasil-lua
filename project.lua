@@ -133,7 +133,7 @@ function info() -- info / nefunkcni nyni
 	print()
 	print("[PH]")
 	print("----------")
-	print("Alpha 0.98a")
+	print("Alpha 0.121b")
 	print("-----------")
 	print()
 end
@@ -877,4 +877,26 @@ vynechRadek()
 print("Vybral jste si:")
 print("Rasa: Clovek")
 print("Trida: Viking")
-print("")
+print("Zacatecni zbran: Sekera")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(3)
+
+vynechRadek()
+
+print("Vypocitavani vhodneho mista.")
+print("Vybirani zacatecnicke vesnice.")
+print("Idealni vesnice vybrana.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Byl jsi prepraven do zacatcnicke vesnice Mulafell.")
