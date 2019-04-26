@@ -946,6 +946,17 @@ vynechRadek()
 print("Obdivujes realitu okoli a stale si myslis ze je to pouze sen.")
 print("Prichazis k velikym zdem vesnice.")
 print("Obchazis vesnici a zastavis se pred obrovskymi vraty masivni brany.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Pred branou stoji 2 strazci.")
+print()
 elseif vesnice == "2" then
 print("Rozhodl jsi se prozkoumat okoli.")
 
