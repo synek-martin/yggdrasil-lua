@@ -956,7 +956,7 @@ cekani(1)
 vynechRadek()
 
 print("Pred branou stoji 2 strazci.")
-print()
+print("Jeden ma sekeru a druhy kratky mec.")
 elseif vesnice == "2" then
 print("Rozhodl jsi se prozkoumat okoli.")
 
