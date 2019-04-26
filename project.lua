@@ -1,4 +1,4 @@
--- Valka Bohu 
+-- [PH] 
 -- Copyright © Martin Synek 2019
 
 -- Functions
@@ -131,9 +131,9 @@ end
 
 function info() -- info / nefunkcni nyni
 	print()
-	print("Valka Bohu")
+	print("[PH]")
 	print("----------")
-	print("Alpha 0.86a")
+	print("Alpha 0.98a")
 	print("-----------")
 	print()
 end
@@ -144,7 +144,7 @@ function triRadky() -- vynecha 3 radky
 	print()
 end
 
-function uvodDoVR() -- vypise uvod vr hry Valka Bohu
+function uvodDoVR() -- vypise uvod vr hry [PH]
 	print()
 	print("Yggdrasil, 'Strom svetu', podporuje devet svetu, Niflheim, Muspelheim, Asgard, Midgard, Jotunheim, Vanaheim, Alfheim, Svartalfheim a Helheim.")
 	print("Tyto svety jsou domovem mnoha fantastickym stvorenim.")
@@ -230,7 +230,7 @@ function uvodDoHry() -- uvod postavy
 	print("-----")
 	print("Jmenujes se Asvald Amundsen.")
 	print("Jsi stredoskolsky student a zijes v dobe fulldive vr mmorpg her.")
-	print("Za mesic The Boring Company, zalozena Elonem Muskem, spusti novou hru zvanou Valka Bohu (War Of Gods).")
+	print("Za mesic The Boring Company, zalozena Elonem Muskem, spusti novou hru zvanou [PH] (War Of Gods).")
 	print("Snazil jsi se premluvit rodice, aby ti koupili starsi verzi popularni VR konzole, The Omen.")
 	print("Vsichni tvi kamradi presvedcili sve rodice, aby jim koupili alespon tu starsi verzi, na ktere lze hrat Valku Bohu.")
 	print("------------------------------------------------------------------------------------------------------------------")
@@ -351,7 +351,7 @@ vynechRadek()
 print("Cestou do skoly potkavas sveho dlouhodobeho kamarada, Fredrika Asphaug.")
 print("Bavite se, a kdyz prijdete do tridy tak za tebou prijde tvoje kamaradka, Siri Holm.")
 print("Je nadsena nad tim, ze premluvila sve rodice, aby ji koupily nejnovejsi virtualni konzoli.")
-print("Zacnete mluvit o te nove hre, ktera ma vyjit pristi tyden, Valka Bohu.")
+print("Zacnete mluvit o te nove hre, ktera ma vyjit pristi tyden, [PH].")
 print("Vsichni byli fascinovani tim, ze pro dobu a prostredi Valky Bohu vybrali eru Vikingu.")
 print("Spoustu lidi si myslelo, ze to bude vice modernejsi prostredi.")
 print("Zvoni a skola zacina.")
@@ -852,4 +852,29 @@ cekani(1)
 
 vynechRadek()
 
+print("Rozhlizis se a pred soubou si vsimnes vznasejici obrazovky.")
+print("Na obrazovce chvili probihaji nejake runy a pak se zmeni na normalni pismo.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Vitejte v [PH].")
+print("Vytvorte si vlastni postavu.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(3)
+
+vynechRadek()
+
+print("Vybral jste si:")
+print("Rasa: Clovek")
+print("Trida: Viking")
 print("")
