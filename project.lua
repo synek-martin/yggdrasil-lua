@@ -900,3 +900,24 @@ cekani(1)
 vynechRadek()
 
 print("Byl jsi prepraven do zacatcnicke vesnice Mulafell.")
+print("Mas 2 moznosti.")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Pujdes dale do vesnice nebo pujdes prozkoumat okoli?")
+
+vynechRadek()
+
+cekani(1)
+
+repeat -- Vesnice nebo okoli?
+		io.write("1) Dale do vesnice. 2) Prozkoumat okoli. : ")
+		prohlednutiPrstenu1 = io.read()
+until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
+
