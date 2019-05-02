@@ -959,7 +959,16 @@ print("Pred branou stoji 2 strazci.")
 print("Jeden ma sekeru a druhy kratky mec.")
 print("Jeden si te vsimne a rekne to tomu druhemu.")
 print("Opatrne k nim prijdes bliz.")
-print("")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+print("Nastrazi ")
 elseif vesnice == "2" then
 print("Rozhodl jsi se prozkoumat okoli.")
 
