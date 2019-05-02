@@ -968,7 +968,28 @@ cekani(1)
 
 vynechRadek()
 
-print("Nastrazi ")
+print("Jakmile si straze vsimnou ze se k nim priblizujes, tak si pripravy zbrane.")
+print(" Kdyz k nim prijdes blize zobrazi se nad nimi jejich jmena a level.")
+
+vynechRadek()
+
+print("Boe")
+print("level 20")
+
+vynechRadek()
+
+print("Tore")
+print("level 20")
+
+vynechRadek()
+
+pokracovani()
+
+cekani(1)
+
+vynechRadek()
+
+
 elseif vesnice == "2" then
 print("Rozhodl jsi se prozkoumat okoli.")
 
