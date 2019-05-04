@@ -981,7 +981,7 @@ if vesnice == "1" then
 	vynechRadek()
 
 	print("Jakmile si straze vsimnou ze se k nim priblizujes, tak si pripravy zbrane.")
-	print(" Kdyz k nim prijdes blize zobrazi se nad nimi jejich jmena a level.")
+	print("Kdyz k nim prijdes blize zobrazi se nad nimi jejich jmena a level.")
 
 	vynechRadek()
 
@@ -999,7 +999,6 @@ if vesnice == "1" then
 	EE1 = io.read()
 
 	if EE1 == "1" then
-
 		cekani(1)
 
 		vynechRadek()
@@ -1007,6 +1006,59 @@ if vesnice == "1" then
 		print("STOP!")
 		print("YOU VIOLATED THE LAW!")
 		print("PAY THE COURT A FINE OR SERVE YOUR SENTENCE!")
+		
+		vynechRadek()
+		
+		pokracovani()
+		
+		cekani(1)
+		
+		vynechRadek()
+	end
+	
+	print("Zastavis se pred nimi.")
+	print("'Stuj!'")
+	print("'Co tu delas cizince.'")
+	
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+
+	print("Jak odpovis?")
+
+	vynechRadek()
+
+	cekani(1)
+
+	repeat -- Vesnice nebo okoli?
+		io.write("1) 'Jsem ztracen.' 2) 'Pouze si chci doplnit zasoby a zase odejdu.' : ")
+		StrazeZV = io.read()
+	until StrazeZV == "1" or StrazeZV == "2"
+	
+	if StrazeZV == "1" then
+		print("'Jsem ztracen.'")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+	elseif StrazeZV == "2" then
+		print("'Pouze si chci doplnit zasoby a zase odejdu.'")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
 	end
 	
 	print()
