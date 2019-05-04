@@ -1061,7 +1061,17 @@ if vesnice == "1" then
 		vynechRadek()
 	end
 	
-	print()
+	print("'Dobre pustime te dovnitr.'")
+
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+	
+	print("")
 elseif vesnice == "2" then
 	print("Rozhodl jsi se prozkoumat okoli.")
 
