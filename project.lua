@@ -116,7 +116,7 @@ function logVR() -- load hry
 	repeat
 	until os.clock() - casTed >= 18
 	
-	print("ZAPINANI VALKY BOHU.")
+	print("ZAPINANI [PH].")
 	print()
 end
 
@@ -132,9 +132,9 @@ end
 function info() -- info / nefunkcni nyni
 	print()
 	print("[PH]")
-	print("----------")
-	print("Alpha 0.121b")
-	print("-----------")
+	print("------------")
+	print("Alpha 0.145a")
+	print("------------")
 	print()
 end
 
@@ -232,7 +232,7 @@ function uvodDoHry() -- uvod postavy
 	print("Jsi stredoskolsky student a zijes v dobe fulldive vr mmorpg her.")
 	print("Za mesic The Boring Company, zalozena Elonem Muskem, spusti novou hru zvanou [PH] (War Of Gods).")
 	print("Snazil jsi se premluvit rodice, aby ti koupili starsi verzi popularni VR konzole, The Omen.")
-	print("Vsichni tvi kamradi presvedcili sve rodice, aby jim koupili alespon tu starsi verzi, na ktere lze hrat Valku Bohu.")
+	print("Vsichni tvi kamradi presvedcili sve rodice, aby jim koupili alespon tu starsi verzi, na ktere lze hrat [PH].")
 	print("------------------------------------------------------------------------------------------------------------------")
 end	
 
@@ -352,7 +352,7 @@ print("Cestou do skoly potkavas sveho dlouhodobeho kamarada, Fredrika Asphaug.")
 print("Bavite se, a kdyz prijdete do tridy tak za tebou prijde tvoje kamaradka, Siri Holm.")
 print("Je nadsena nad tim, ze premluvila sve rodice, aby ji koupily nejnovejsi virtualni konzoli.")
 print("Zacnete mluvit o te nove hre, ktera ma vyjit pristi tyden, [PH].")
-print("Vsichni byli fascinovani tim, ze pro dobu a prostredi Valky Bohu vybrali eru Vikingu.")
+print("Vsichni byli fascinovani tim, ze pro dobu a prostredi [PH] vybrali eru Vikingu.")
 print("Spoustu lidi si myslelo, ze to bude vice modernejsi prostredi.")
 print("Zvoni a skola zacina.")
 
@@ -604,9 +604,9 @@ elseif vecere == "2" then
 end
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -616,9 +616,9 @@ print("Bavite se a ani si nevsimnes, ze uz jsi ve skole.")
 print("Zvoni.")
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -626,9 +626,9 @@ vynechRadek()
 print("Zvoni a pro dnesek konci skola.")
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -640,9 +640,9 @@ elseif obchod == "2" then
 end
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -651,9 +651,9 @@ print("Cestou domu najdes pod starym stromem prsten.")
 print("Vypada ze uz tu nejakou dobu lezi.")
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -663,7 +663,7 @@ print("Vezmes si ho?")
 vynechRadek()
 
 cekani(1)
-
+-- 666 muhehehehe
 repeat -- vez mes is ten prsten?
 	io.write("1) Ano. 2) Ne. : ")
 	prsten = io.read()
@@ -695,7 +695,7 @@ elseif prsten == "2" then
 	cekani(2)
 	
 	vynechRadek()
--- 666 muhehehehe
+
 	print("Odchazis domu.")
 	print("Zbytek skolniho roku jsi ani na jednu hru nesahl.")
 	
@@ -729,9 +729,9 @@ elseif prsten == "2" then
 end
 
 vynechRadek()
-		
+
 pokracovani()
-		
+
 cekani(1)
 
 vynechRadek()
@@ -755,8 +755,8 @@ vynechRadek()
 cekani(1)
 
 repeat -- prohlednes si prsten?
-		io.write("1) Ano. 2) Ne. : ")
-		prohlednutiPrstenu1 = io.read()
+	io.write("1) Ano. 2) Ne. : ")
+	prohlednutiPrstenu1 = io.read()
 until prohlednutiPrstenu1 == "1" or prohlednutiPrstenu1 == "2"
 
 vynechRadek()
@@ -899,8 +899,20 @@ cekani(3)
 vynechRadek()
 
 print("Vypocitavani vhodneho mista.")
+
+cekani(2)
+
+vynechRadek()
+
 print("Vybirani zacatecnicke vesnice.")
+
+cekani(2)
+
+vynechRadek()
+
 print("Idealni vesnice vybrana.")
+
+cekani(2)
 
 vynechRadek()
 
@@ -928,79 +940,87 @@ vynechRadek()
 cekani(1)
 
 repeat -- Vesnice nebo okoli?
-		io.write("1) Dale do vesnice. 2) Prozkoumat okoli. : ")
-		vesnice = io.read()
+	io.write("1) Dale do vesnice. 2) Prozkoumat okoli. : ")
+	vesnice = io.read()
 until vesnice == "1" or vesnice == "2"
 
 if vesnice == "1" then
-print("Rozhodl jsi se jit dale do vesnice.")
+	print("Rozhodl jsi se jit dale do vesnice.")
 
-vynechRadek()
+	vynechRadek()
 
-pokracovani()
+	pokracovani()
 
-cekani(1)
+	cekani(1)
 
-vynechRadek()
+	vynechRadek()
 
-print("Obdivujes realitu okoli a stale si myslis ze je to pouze sen.")
-print("Prichazis k velikym zdem vesnice.")
-print("Obchazis vesnici a zastavis se pred obrovskymi vraty masivni brany.")
+	print("Obdivujes realitu okoli a stale si myslis ze je to pouze sen.")
+	print("Prichazis k velikym zdem vesnice.")
+	print("Obchazis vesnici a zastavis se pred obrovskymi vraty masivni brany.")
 
-vynechRadek()
+	vynechRadek()
 
-pokracovani()
+	pokracovani()
 
-cekani(1)
+	cekani(1)
 
-vynechRadek()
+	vynechRadek()
 
-print("Pred branou stoji 2 strazci.")
-print("Jeden ma sekeru a druhy kratky mec.")
-print("Jeden si te vsimne a rekne to tomu druhemu.")
-print("Opatrne k nim prijdes bliz.")
+	print("Pred branou stoji 2 strazci.")
+	print("Jeden ma sekeru a druhy kratky mec.")
+	print("Jeden si te vsimne a rekne to tomu druhemu.")
+	print("Opatrne k nim prijdes bliz.")
 
-vynechRadek()
+	vynechRadek()
 
-pokracovani()
+	pokracovani()
 
-cekani(1)
+	cekani(1)
 
-vynechRadek()
+	vynechRadek()
 
-print("Jakmile si straze vsimnou ze se k nim priblizujes, tak si pripravy zbrane.")
-print(" Kdyz k nim prijdes blize zobrazi se nad nimi jejich jmena a level.")
+	print("Jakmile si straze vsimnou ze se k nim priblizujes, tak si pripravy zbrane.")
+	print(" Kdyz k nim prijdes blize zobrazi se nad nimi jejich jmena a level.")
 
-vynechRadek()
+	vynechRadek()
 
-print("Boe")
-print("level 20")
+	print("Boe")
+	print("level 20")
 
-vynechRadek()
+	vynechRadek()
 
-print("Tore")
-print("level 20")
+	print("Tore")
+	print("level 20")
 
-vynechRadek()
+	vynechRadek()
 
-pokracovani()
+	io.write("Zmackni ENTER pro pokracovani.")
+	EE1 = io.read()
 
-cekani(1)
+	if EE1 == "1" then
 
-vynechRadek()
+		cekani(1)
 
+		vynechRadek()
 
+		print("STOP!")
+		print("YOU VIOLATED THE LAW!")
+		print("PAY THE COURT A FINE OR SERVE YOUR SENTENCE!")
+	end
+	
+	print()
 elseif vesnice == "2" then
-print("Rozhodl jsi se prozkoumat okoli.")
+	print("Rozhodl jsi se prozkoumat okoli.")
 
-vynechRadek()
+	vynechRadek()
 
-pokracovani()
+	pokracovani()
 
-cekani(1)
+	cekani(1)
 
-vynechRadek()
+	vynechRadek()
 
-print("")
+	print("")
 
 end
