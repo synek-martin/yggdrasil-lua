@@ -1071,6 +1071,8 @@ if vesnice == "1" then
 
 	vynechRadek()
 	
+	print("I kdyz te strazci pustili dovnitr, muzes citit jejich ledove pohledy na tvych zadech.")
+	print("Jak se tak prochazis po vesnici a obdivujes realitu tveho snu, tak do te vesnice zacne vchazet vice a vice lidi, co vypadaji jako ty.")
 	print("")
 elseif vesnice == "2" then
 	print("Rozhodl jsi se prozkoumat okoli.")
