@@ -243,7 +243,60 @@ function varovani() -- varovani
 	print("Byl jsi varovan.")
 	print("----------------")
 end
+
+function hlavniObrazovka()
+	info()
 	
+	vynechRadek()
+	
+	print("1) Zacit novou hru.")
+	
+	vynechRadek()
+	
+	print("2)Nacist hru.")
+	
+	vynechRadek()
+	
+	print("3) Ukoncit hru.")
+	
+	vynechRadek()
+	
+	repeat
+		io.write("Napiste co chcete udelat. : ")
+		hlavniObrazovka1 == io.read()
+	until hlavniObrazovka1 == "1" or hlavniObrazovka1 == "2" or hlavniObrazovka1 == "3"
+
+	if hlavniObrazovka1 == "3" then
+		print("Vybral jste ukonceni hry.")
+		
+		vynechRadek()
+		
+		print("Ukoncit hru?")
+		repeat
+			io.write("1) Ano 2) Ne : ")
+			konec1 == io.read()
+		until konec1 == "1" or konec1 == "2"
+
+		if konec1 == "1" then
+			konecHry()
+			
+			vynechRadek()
+			
+			cekani(1)
+			
+			konecHryEnter()
+			
+			os.exit()
+		elseif konec1 == "2"
+			print("Budes vracen do hlavni obrazovky.")
+		
+			cekani(1)
+		
+			hlavniObrazovka()
+		end
+	elseif hlavniObrazovka1 == "2"
+		
+end
 -- Main
 
 triRadky()
@@ -264,13 +317,20 @@ triRadky()
 
 cekani(1)
 
-pripraveni()
+zapnutiHry()
+--pripraveni()
 
 triRadky()
 
-cekani(1)
+cekani(3)
 
-zapnutiHry()
+hlavniObrazovka() ---------------------------------------------------------------------------------------------------------------------------------------------
+
+triRadky()
+
+cekani(3)
+
+--zapnutiHry()
 
 cekani(1)
 
@@ -1035,12 +1095,12 @@ if vesnice == "1" then
 	cekani(1)
 
 	repeat -- Vesnice nebo okoli?
-		io.write("1) 'Jsem ztracen.' 2) 'Pouze si chci doplnit zasoby a zase odejdu.' : ")
+		io.write("1) 'Ztratil jsem se.' 2) 'Chci doplnit zasoby a zase odejdu.' : ")
 		StrazeZV = io.read()
 	until StrazeZV == "1" or StrazeZV == "2"
 	
 	if StrazeZV == "1" then
-		print("'Jsem ztracen.'")
+		print("'Ztratil jsem se.'")
 		
 		vynechRadek()
 
@@ -1071,8 +1131,18 @@ if vesnice == "1" then
 
 	vynechRadek()
 	
-	print("I kdyz te strazci pustili dovnitr, muzes citit jejich ledove pohledy na tvych zadech.")
-	print("Jak se tak prochazis po vesnici a obdivujes realitu tveho snu, tak do te vesnice zacne vchazet vice a vice lidi, co vypadaji jako ty.")
+	print("I kdyz te strazci pustili dovnitr, muzes citit jejich ostrazite pohledy na tvych zadech.")
+	print("Najednou se pred tebou zobrazi dalsi obrazovka.")
+	
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+	
+	print("Vitejte do [PH]")
 	print("")
 elseif vesnice == "2" then
 	print("Rozhodl jsi se prozkoumat okoli.")
