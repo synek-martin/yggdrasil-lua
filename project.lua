@@ -263,7 +263,7 @@ function hlavniObrazovka()
 	
 	repeat
 		io.write("Napiste co chcete udelat. : ")
-		hlavniObrazovka1 == io.read()
+		hlavniObrazovka1 = io.read()
 	until hlavniObrazovka1 == "1" or hlavniObrazovka1 == "2" or hlavniObrazovka1 == "3"
 
 	if hlavniObrazovka1 == "3" then
@@ -274,7 +274,7 @@ function hlavniObrazovka()
 		print("Ukoncit hru?")
 		repeat
 			io.write("1) Ano 2) Ne : ")
-			konec1 == io.read()
+			konec1 = io.read()
 		until konec1 == "1" or konec1 == "2"
 
 		if konec1 == "1" then
@@ -287,15 +287,19 @@ function hlavniObrazovka()
 			konecHryEnter()
 			
 			os.exit()
-		elseif konec1 == "2"
+		elseif konec1 == "2" then
 			print("Budes vracen do hlavni obrazovky.")
 		
 			cekani(1)
 		
 			hlavniObrazovka()
 		end
-	elseif hlavniObrazovka1 == "2"
+	elseif hlavniObrazovka1 == "2" then
+		--repeat
+			--io.write("")
 		
+		--until
+	end
 end
 -- Main
 
@@ -317,8 +321,8 @@ triRadky()
 
 cekani(1)
 
-zapnutiHry()
---pripraveni()
+--zapnutiHry()
+pripraveni()
 
 triRadky()
 
@@ -330,7 +334,7 @@ triRadky()
 
 cekani(3)
 
---zapnutiHry()
+zapnutiHry()
 
 cekani(1)
 

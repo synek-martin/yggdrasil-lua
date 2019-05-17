@@ -1,10 +1,13 @@
-ucon.docmd("CLS")
-ucon.docmd("LOG screenoff")
-ucon.docmd("RECV blkinit 2048")
-ucon.docmd("SEND -p \"U-Boot >\" \"md $loadaddr 16\"")
-ucon.docmd("RECV blkcpy")
-ucon.docmd("LOG screenon")
-resp=ucon.getenv("RECVBLOCK")
-io.write(string.format("\nTotal response is %d bytes...\n",string.len(resp)))
-print(resp)
+print("Ahoj")
 
+goto yeet
+
+print("AHOJ")
+print("AHOJ")
+print("AHOJ")
+print("AHOJ")
+print("AHOJ")
+print("AHOJ")
+
+::yeet::
+print("yeet")
