@@ -14,7 +14,7 @@ function konecHryEnter()
 	io.read()
 end
 
-function pripraveni() -- nacitani hry
+function pripraveni() -- pripraveni hry
 	casTed = os.clock()
 	
 	print("Nacitani systemu.")
@@ -133,7 +133,7 @@ function info() -- info / nefunkcni nyni
 	print()
 	print("[PH]")
 	print("------------")
-	print("Alpha 0.145a")
+	print("Alpha 0.256a")
 	print("------------")
 	print()
 end
@@ -156,7 +156,7 @@ function pokracovani() -- pro pokracovani zmackni ENTER
 	io.read()
 end
 
-function tvorbaPosatvy() -- [WIP] [PH] (bude v jine verzi - bude trvat dlouho, protoze 9 ras a svetu)
+function tvorbaPosatvy() -- [WIP] [PH] (bude v jine verzi - bude trvat dlouho, protoze 9 ras, svetu a pribehu)
 	print()
 	print("Vytvorte si postavu.")
 	
@@ -244,7 +244,7 @@ function varovani() -- varovani
 	print("----------------")
 end
 
-function hlavniObrazovka()
+function hlavniObrazovka() -- [WIP] snazim se prijit na nacitaci zpusob bez pouzivani goto
 	info()
 	
 	vynechRadek()
@@ -286,6 +286,8 @@ function hlavniObrazovka()
 			
 			konecHryEnter()
 			
+			os.execute("cls")
+			
 			os.exit()
 		elseif konec1 == "2" then
 			print("Budes vracen do hlavni obrazovky.")
@@ -322,13 +324,18 @@ triRadky()
 cekani(1)
 
 --zapnutiHry()
+
+vynechRadek()
+
+cekani(1)
+
 pripraveni()
 
 triRadky()
 
 cekani(3)
 
-hlavniObrazovka() ---------------------------------------------------------------------------------------------------------------------------------------------
+--hlavniObrazovka() ---------------------------------------------------------------------------------------------------------------------------------------------
 
 triRadky()
 
@@ -501,6 +508,8 @@ if bus == "1" then -- odpoved na autobus.
 	konecHryEnter()
 	
 	cekani(2)
+	
+	os.execute("cls")
 	
 	os.exit()
 elseif bus == "2" then
@@ -788,6 +797,8 @@ elseif prsten == "2" then
 	konecHryEnter()
 	
 	cekani(2)
+	
+	os.execute("cls")
 	
 	os.exit()
 end
@@ -1146,8 +1157,14 @@ if vesnice == "1" then
 
 	vynechRadek()
 	
+	print("[Oznameni systemu.]")
 	print("Vitejte do [PH]")
-	print("")
+	
+	vynechRadek()
+	
+	print("Do oficialniho spusteni beta verze [PH] zbyva:")
+	print("336 hodin")
+	
 elseif vesnice == "2" then
 	print("Rozhodl jsi se prozkoumat okoli.")
 
@@ -1159,6 +1176,185 @@ elseif vesnice == "2" then
 
 	vynechRadek()
 
-	print("")
+	print("Kdyz se otocis vidis hluboky les.")
+	print("Jakmile do nej vstoupis vidis spoustu zvirat a prekrasnych rostlin.")
+	print("Kochas se nad prekrasnou faunou a florou.")
 
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+
+	print("Jsi jakoby te ten les ocaroval svym magickym pohledem.")
+
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+
+	print("Po chvili se proberes a zjistis, ze jsi ztraceny.")
+	print("Prochazis se dal kolem dokola tim lesem.")
+	print("Po tom co si uvedomis ze furt chodis v kruhu se zastavis.")
+	print("Jak stojis tak zjistis, ze okolo tebe nejsou zadne zvuky.")
+	print("Rozhlizis se okolo a nevidis zadne zvirata a ani nevidis svoje stopy, aby jsi se ponich vratil zpet.")
+	print("Brzi poznas, ze uz je skoro vecer a nevidis ani pet kroku pred sebe.")
+
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(1)
+
+	vynechRadek()
+
+	print("Zoufali zacnes kricet z plnych plic.")
+
+	vynechRadek()
+
+	pokracovani()
+
+	cekani(3)
+
+	vynechRadek()
+
+	print("Z dalky slysis dusot koni a rozhodnes se kricet jeste vic.")
+	print("Po chvili vidis svetla loucni a priblizuje se k tobe povoz se ctyrmi zaprazenymi konmi.")
+	print("Na nem sedi asi osm lidi.")
+	print("Koukaji se na tebe jako by se ti vysmivali do obliceje.")
+	print("Jeden sleze dolu a z opasku si veme mec.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Kouknes se na nej poradne a objevi se nad nim jeho jmeno a level.")
+	
+	vynechRadek()
+	
+	cekani(1)
+	
+	print("Ingolf")
+	print("level 35")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Pta se te:")
+	print("'Proc kricis uprostred lesa?'")
+	print("'Chces privolat vlky?'")
+	print("Odpovis ze ne.")
+	print("Dale mu vysvetlujes, ze jsi ztraceny a slisel jsi dusot koni.")
+	print("Odpovi ti, ze jedou do male vesnice jmenem Mulafell a ze te mouzou svezt.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Jak odpovis?")
+	
+	repeat -- svezes se?
+		io.write("1) 'Ano byl bych moc rad kdyby jste ' 2) 'Chci doplnit zasoby a zase odejdu.' : ")
+		svezeni = io.read()
+	until svezeni == "1" or svezeni == "2"
+	
+	print("Vyleze si na povoz a naznaci, ze by jsi mel taky.")
+	print("Vylezes nahoru a povoz se rozjede.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Po pul hodine uz lze videt obrovske steny okolo male vesnice.")
+	
+	vynechRadek()
+	
+	cekani(1)
+	
+	print("Po dalsi ctvrt hodine prijizdite pred masivni branu.")
+	print("Pred ni stoji 2 strazci.")
+	print("Jeden ma sekeru a druhy kratky mec.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Kdyz prijede blizko k nim objevi se jejich informace.")
+	
+	vynechRadek()
+	
+	cekani(1)
+	
+	print("Boe")
+	print("level 20")
+
+	vynechRadek()
+
+	print("Tore")
+	print("level 20")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("Strazci se kouknou na Ingolfa a pozna ho.")
+	print("Chvili si s snim povida a pak vas pusti dovnitr.")
+	print("Podekujes Ingolfovi a odejdes.")
+	print("Prochazis se a obdivujes krasu a jednoduchost domu.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+		
+	print("Najednou se pred tebou zobrazi dalsi obrazovka.")
+	
+	vynechRadek()
+	
+	pokracovani()
+	
+	cekani(1)
+	
+	vynechRadek()
+	
+	print("[Oznameni systemu.]")
+	print("Vitejte do [PH]")
+	
+	vynechRadek()
+	
+	print("Do oficialniho spusteni beta verze [PH] zbyva:")
+	print("336 hodin")
 end
