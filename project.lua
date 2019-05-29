@@ -297,10 +297,10 @@ function hlavniObrazovka() -- [WIP] snazim se prijit na nacitaci zpusob bez pouz
 			hlavniObrazovka()
 		end
 	elseif hlavniObrazovka1 == "2" then
-		--repeat
-			--io.write("")
+		repeat
+			io.write("")
 		
-		--until
+		until
 	end
 end
 -- Main
@@ -1272,89 +1272,140 @@ elseif vesnice == "2" then
 	print("Jak odpovis?")
 	
 	repeat -- svezes se?
-		io.write("1) 'Ano byl bych moc rad kdyby jste ' 2) 'Chci doplnit zasoby a zase odejdu.' : ")
+		io.write("1) 'Ano byl bych moc rad kdyby jste me svezli.' 2) 'Ne dekuji staci, kdyz me nasmerujete k nejblizsi vesnici.' : ")
 		svezeni = io.read()
 	until svezeni == "1" or svezeni == "2"
 	
-	print("Vyleze si na povoz a naznaci, ze by jsi mel taky.")
-	print("Vylezes nahoru a povoz se rozjede.")
-	
-	vynechRadek()
-	
-	pokracovani()
-	
-	cekani(1)
-	
-	vynechRadek()
-	
-	print("Po pul hodine uz lze videt obrovske steny okolo male vesnice.")
-	
-	vynechRadek()
-	
-	cekani(1)
-	
-	print("Po dalsi ctvrt hodine prijizdite pred masivni branu.")
-	print("Pred ni stoji 2 strazci.")
-	print("Jeden ma sekeru a druhy kratky mec.")
-	
-	vynechRadek()
-	
-	pokracovani()
-	
-	cekani(1)
-	
-	vynechRadek()
-	
-	print("Kdyz prijede blizko k nim objevi se jejich informace.")
-	
-	vynechRadek()
-	
-	cekani(1)
-	
-	print("Boe")
-	print("level 20")
-
-	vynechRadek()
-
-	print("Tore")
-	print("level 20")
-	
-	vynechRadek()
-	
-	pokracovani()
-	
-	cekani(1)
-	
-	vynechRadek()
-	
-	print("Strazci se kouknou na Ingolfa a pozna ho.")
-	print("Chvili si s snim povida a pak vas pusti dovnitr.")
-	print("Podekujes Ingolfovi a odejdes.")
-	print("Prochazis se a obdivujes krasu a jednoduchost domu.")
-	
-	vynechRadek()
-	
-	pokracovani()
-	
-	cekani(1)
-	
-	vynechRadek()
+	if svezeni == "1" then
+		print("Rozhodl jsi se svezt.")
 		
-	print("Najednou se pred tebou zobrazi dalsi obrazovka.")
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+
+		print("Vyleze si na povoz a naznaci, ze by jsi mel taky.")
+		print("Vylezes nahoru a povoz se rozjede.")
 	
-	vynechRadek()
+		vynechRadek()
 	
-	pokracovani()
+		pokracovani()
 	
-	cekani(1)
+		cekani(1)
 	
-	vynechRadek()
+		vynechRadek()
 	
-	print("[Oznameni systemu.]")
-	print("Vitejte do [PH]")
+		print("Po pul hodine uz lze videt obrovske steny okolo male vesnice.")
 	
-	vynechRadek()
+		vynechRadek()
 	
-	print("Do oficialniho spusteni beta verze [PH] zbyva:")
-	print("336 hodin")
+		cekani(1)
+	
+		print("Po dalsi ctvrt hodine prijizdite pred masivni branu.")
+		print("Pred ni stoji 2 strazci.")
+		print("Jeden ma sekeru a druhy kratky mec.")
+		
+		vynechRadek()
+		
+		pokracovani()
+		
+		cekani(1)
+		
+		vynechRadek()
+		
+		print("Kdyz prijede blizko k nim objevi se jejich informace.")
+		
+		vynechRadek()
+		
+		cekani(1)
+		
+		print("Boe")
+		print("level 20")
+	
+		vynechRadek()
+
+		print("Tore")
+		print("level 20")
+	
+		vynechRadek()
+	
+		pokracovani()
+	
+		cekani(1)
+	
+		vynechRadek()
+	
+		print("Strazci se kouknou na Ingolfa a pozna ho.")
+		print("Chvili si s snim povida a pak vas pusti dovnitr.")
+		print("Podekujes Ingolfovi a odejdes.")
+		print("Prochazis se a obdivujes krasu a jednoduchost domu.")
+	
+		vynechRadek()
+	
+		pokracovani()
+	
+		cekani(1)
+	
+		vynechRadek()
+		
+		print("Najednou se pred tebou zobrazi dalsi obrazovka.")
+	
+		vynechRadek()
+	
+		pokracovani()
+	
+		cekani(1)
+	
+		vynechRadek()
+	
+		print("[Oznameni systemu.]")
+		print("Vitejte do [PH]")
+	
+		vynechRadek()
+	
+		print("Do oficialniho spusteni beta verze [PH] zbyva:")
+		print("336 hodin")
+	elseif svezeni == "2" then
+		print("Rozhodl jsi se odmitnout jeho nabidku.")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+		
+		print("Ingolf se na tebe pozoruhodne koukne, a varuje te ze tento les je plny nebezpecnych zvirat.")
+		print("Pote se te zepta jeste jednou.")
+		print("'Nechces abz jsme te svezli?'")
+		print("Stejne odpovis, ze ne.")
+		print("Ingolf si povzdychne a vyleze na povoz.")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+
+		print("Po chvili sleze a v ruce ma mapu.")
+		print("Vysvetli ti, ze musis jit na sever asi jednu hodinu.")
+		print("Ukaze ti smer, vyleze na povoz a popreje doubrou cestu.")
+		print("Podekujes mu a oni odjedou.")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+		
+		print("")
+	end
 end
