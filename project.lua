@@ -1,4 +1,4 @@
--- [PH] 
+-- Yggdrasil 
 -- Copyright © Martin Synek 2019
 
 -- Functions
@@ -116,7 +116,7 @@ function logVR() -- load hry
 	repeat
 	until os.clock() - casTed >= 18
 	
-	print("ZAPINANI [PH].")
+	print("ZAPINANI Yggdrasil.")
 	print()
 end
 
@@ -129,11 +129,11 @@ function cekani(kolikSekund) -- ceka 1s
 	until os.clock() - casTed >= kolikSekund
 end
 
-function info() -- info / nefunkcni nyni
+function info() -- info
 	print()
-	print("[PH]")
+	print("Yggdrasil")
 	print("------------")
-	print("Alpha 0.256a")
+	print("Alpha 0.326a")
 	print("------------")
 	print()
 end
@@ -144,7 +144,7 @@ function triRadky() -- vynecha 3 radky
 	print()
 end
 
-function uvodDoVR() -- vypise uvod vr hry [PH]
+function uvodDoVR() -- vypise uvod vr hry Yggdrasil
 	print()
 	print("Yggdrasil, 'Strom svetu', podporuje devet svetu, Niflheim, Muspelheim, Asgard, Midgard, Jotunheim, Vanaheim, Alfheim, Svartalfheim a Helheim.")
 	print("Tyto svety jsou domovem mnoha fantastickym stvorenim.")
@@ -156,7 +156,7 @@ function pokracovani() -- pro pokracovani zmackni ENTER
 	io.read()
 end
 
-function tvorbaPosatvy() -- [WIP] [PH] (bude v jine verzi - bude trvat dlouho, protoze 9 ras, svetu a pribehu)
+function tvorbaPosatvy() -- [WIP] Yggdrasil (bude v jine verzi - bude trvat dlouho, 9 ras a pribehu)
 	print()
 	print("Vytvorte si postavu.")
 	
@@ -230,9 +230,9 @@ function uvodDoHry() -- uvod postavy
 	print("-----")
 	print("Jmenujes se Asvald Amundsen.")
 	print("Jsi stredoskolsky student a zijes v dobe fulldive vr mmorpg her.")
-	print("Za mesic The Boring Company, zalozena Elonem Muskem, spusti novou hru zvanou [PH] (War Of Gods).")
+	print("Za mesic The Boring Company, zalozena Elonem Muskem, spusti novou hru zvanou Yggdrasil.")
 	print("Snazil jsi se premluvit rodice, aby ti koupili starsi verzi popularni VR konzole, The Omen.")
-	print("Vsichni tvi kamradi presvedcili sve rodice, aby jim koupili alespon tu starsi verzi, na ktere lze hrat [PH].")
+	print("Vsichni tvi kamradi presvedcili sve rodice, aby jim koupili alespon tu starsi verzi, na ktere lze hrat Yggdrasil.")
 	print("------------------------------------------------------------------------------------------------------------------")
 end	
 
@@ -422,8 +422,8 @@ vynechRadek()
 print("Cestou do skoly potkavas sveho dlouhodobeho kamarada, Fredrika Asphaug.")
 print("Bavite se, a kdyz prijdete do tridy tak za tebou prijde tvoje kamaradka, Siri Holm.")
 print("Je nadsena nad tim, ze premluvila sve rodice, aby ji koupily nejnovejsi virtualni konzoli.")
-print("Zacnete mluvit o te nove hre, ktera ma vyjit pristi tyden, [PH].")
-print("Vsichni byli fascinovani tim, ze pro dobu a prostredi [PH] vybrali eru Vikingu.")
+print("Zacnete mluvit o te nove hre, ktera ma vyjit pristi tyden, Yggdrasil.")
+print("Vsichni byli fascinovani tim, ze pro dobu a prostredi Yggdrasil vybrali eru Vikingu.")
 print("Spoustu lidi si myslelo, ze to bude vice modernejsi prostredi.")
 print("Zvoni a skola zacina.")
 
@@ -938,7 +938,7 @@ cekani(1)
 
 vynechRadek()
 
-print("Vitejte v [PH].")
+print("Vitejte v Yggdrasil.")
 print("Vytvorte si vlastni postavu.")
 
 vynechRadek()
@@ -1158,11 +1158,11 @@ if vesnice == "1" then
 	vynechRadek()
 	
 	print("[Oznameni systemu.]")
-	print("Vitejte do [PH]")
+	print("Vitejte do Yggdrasil")
 	
 	vynechRadek()
 	
-	print("Do oficialniho spusteni beta verze [PH] zbyva:")
+	print("Do oficialniho spusteni beta verze Yggdrasil zbyva:")
 	print("336 hodin")
 	
 elseif vesnice == "2" then
@@ -1271,6 +1271,10 @@ elseif vesnice == "2" then
 	
 	print("Jak odpovis?")
 	
+	vynechRadek()
+	
+	cekani(1)
+	
 	repeat -- svezes se?
 		io.write("1) 'Ano byl bych moc rad kdyby jste me svezli.' 2) 'Ne dekuji staci, kdyz me nasmerujete k nejblizsi vesnici.' : ")
 		svezeni = io.read()
@@ -1362,11 +1366,11 @@ elseif vesnice == "2" then
 		vynechRadek()
 	
 		print("[Oznameni systemu.]")
-		print("Vitejte do [PH]")
+		print("Vitejte do Yggdrasil")
 	
 		vynechRadek()
 	
-		print("Do oficialniho spusteni beta verze [PH] zbyva:")
+		print("Do oficialniho spusteni beta verze Yggdrasil zbyva:")
 		print("336 hodin")
 	elseif svezeni == "2" then
 		print("Rozhodl jsi se odmitnout jeho nabidku.")
@@ -1406,6 +1410,77 @@ elseif vesnice == "2" then
 
 		vynechRadek()
 		
-		print("")
+		print("Kouknes se smerem kam ukazal a vzdychnes.")
+		print("Vyjdes a doufas, ze se do vesnice dostanes pred pulnoci.")
+		print("V nici se les uplne premenil a pripada ti jako by byl nazivu.")
+		print("Slysis vyti vlku, vidis poletovat svetlusky a slysis sum reky.")
+		
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+		
+		print("V keri pred sebou slysis, jak se neco sustlo.")
+	
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+	
+		print("Pote co se k nemu priblizis, z neho vyskoci obrovsky vlk.")
+		print("Koukne na tebe a zavije.")
+	
+		vynechRadek()
+
+		pokracovani()
+
+		cekani(1)
+
+		vynechRadek()
+	
+		print("Budes s nim bojovat?")
+
+		vynechRadek()
+		
+		cekani(1)
+		
+		repeat -- budes bojovat??
+			io.write("1) Urcite to dam. 2) Nope. : ")
+			svezeni = io.read()
+		until boj1 == "1" or boj1 == "2"
+		
+		if boj1 == "1" then
+			print("Rozhodl jsi se bojovat.")
+		
+			vynechRadek()
+
+			pokracovani()
+
+			cekani(1)
+	
+			vynechRadek()
+	
+			print("Pokracovani priste. Novy update bude pristi mesic.")
+			os.exit()
+		elseif boj1 == "2" then
+			print("Rozhodl jsi se utect.")
+			
+			vynechRadek()
+			
+			pokracovani()
+			
+			cekani(1)
+			
+			vynechRadek()
+			
+			print("Pokracovani priste. Novy update bude pristi mesic.")
+			os.exit()
+		end
 	end
 end
