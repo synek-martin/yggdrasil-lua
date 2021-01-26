@@ -1,2 +1,2 @@
-# Valka_Bohu
-school project
+Yggdrasil
+My 1st year Lua school project.
